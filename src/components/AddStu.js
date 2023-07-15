@@ -63,4 +63,4 @@ class AddStu extends React.Component{
           ); 
       }
     }
-    export default AddStudent;
+    export default AddStu;
