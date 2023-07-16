@@ -4,8 +4,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SchedList from './components/SchedList';
 import Semester from './components/Semester';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import AddStu from './components/AddStu';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import Button from '@mui/material/Button';
 
@@ -15,13 +15,10 @@ function App() {
       <AppBar position="static" color="default">
         <Toolbar>
            <Typography variant="h6" color="inherit">
-            Course Registration
+            Stu Registration
            </Typography>
         </Toolbar>
       </AppBar>
-      <Switch>
-        <Route exact path='/' component={AddStu} />
-      </Switch>
       <BrowserRouter>
 
       <Toolbar>
@@ -32,9 +29,10 @@ function App() {
         </Toolbar>
 
        <Switch>
+        <Route exact path='/addstudent' component={AddStu} />
         <Route exact path='/' component={Semester} />
         <Route path='/schedule' component={SchedList} />
-        <Route exact path='/stu' component={AddStu} />
+        <Route exact path='/student' component={AddStu} />
        </Switch>
       </BrowserRouter>
     </div>
