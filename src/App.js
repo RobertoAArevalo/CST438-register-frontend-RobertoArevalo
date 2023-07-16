@@ -15,18 +15,11 @@ function App() {
       <AppBar position="static" color="default">
         <Toolbar>
            <Typography variant="h6" color="inherit">
-            Stu Registration
+            Student and Course Registration
            </Typography>
         </Toolbar>
       </AppBar>
       <BrowserRouter>
-
-      <Toolbar>
-           <Typography variant="h6" color="inherit">
-            Course Registration
-           </Typography>
-
-        </Toolbar>
 
        <Switch>
         <Route exact path='/addstudent' component={AddStu} />
