@@ -72,7 +72,7 @@ class AddStu extends React.Component {
         <br />
         <br />
         {/* Button to add the student */}
-        <Button variant="outlined" color="primary" style={{ margin: 5 }} onClick={this.handleSubmit}>
+        <Button id="addStuButton" variant="outlined" color="primary" style={{ margin: 5 }} onClick={this.handleSubmit}>
           Add Student
         </Button>
         {/* Button to clear the form */}
